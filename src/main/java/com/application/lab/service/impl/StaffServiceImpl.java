@@ -6,12 +6,16 @@ import com.application.lab.exception.ResourceNotFoundException;
 import com.application.lab.mapper.StaffMapper;
 import com.application.lab.repository.StaffRepository;
 import com.application.lab.service.StaffService;
+
+import lombok.AllArgsConstructor;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@AllArgsConstructor
 public class StaffServiceImpl implements StaffService {
 
     private StaffRepository staffRepository;
